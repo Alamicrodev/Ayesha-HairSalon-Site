@@ -1,0 +1,638 @@
+@import url("https://fonts.googleapis.com/css2?family=Water+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap");
+
+/* Box Model Hack */
+html {
+	font-size: 62.5%;
+	font-family: "Cinzel", serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.btn--black {
+	background: black;
+	padding: 15px 20px;
+	font-size: 1.5em;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	display: inline-block;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* start of header */
+
+header {
+	padding: 20px 5%;
+	background: white;
+}
+
+header > span {
+	font-size: 3em;
+	display: inline-block;
+	width: 15%;
+	text-align: center;
+	font-family: "Water Brush", cursive;
+	vertical-align: middle;
+}
+
+header > nav {
+	display: inline-block;
+	text-align: center;
+	width: 70%;
+	vertical-align: middle;
+}
+
+header nav ul {
+	display: inline-block;
+}
+
+header nav ul li {
+	display: inline-block;
+}
+
+header nav ul li a {
+	font-size: 1.5em;
+	text-decoration: none;
+	margin: 10px 20px;
+	color: black;
+	display: inline-block;
+}
+
+header nav ul li a:hover {
+	text-decoration: underline;
+}
+
+header nav i {
+	font-size: 1.5em;
+	margin: 10px 20px;
+}
+
+header nav i:hover {
+	font-size: 1.6em;
+}
+
+header > a {
+	width: 15%;
+	vertical-align: middle;
+	text-decoration: none;
+	font-size: 1.5em;
+	color: black;
+	text-overflow: wrap;
+}
+
+header > a:hover {
+	text-decoration: underline;
+}
+
+/* end of header */
+/* start of hero section */
+.hero {
+	background: center/cover no-repeat url("../assets/1.jpeg");
+	text-align: center;
+	position: relative;
+}
+
+.hero .content {
+	text-align: left;
+	width: 80%;
+	margin: 0 auto;
+	color: white;
+	padding-top: 120px;
+}
+
+.hero .content h1 {
+	margin: 0;
+	font-size: 8em;
+	font-weight: normal;
+}
+
+.hero .content span {
+	margin: 20px 0;
+	display: block;
+	font-size: 1.5em;
+}
+
+.hero .card {
+	display: block;
+	text-align: left;
+	margin-left: 10%;
+	margin-top: 50px;
+	background: black;
+	color: white;
+	max-width: 300px;
+	padding: 20px 0;
+}
+
+.hero .card h5 {
+	padding: 20px;
+	margin: 0;
+	font-size: 1.5em;
+	font-weight: normal;
+	border-left: 4px solid white;
+}
+
+.hero .card p {
+	padding: 0 20px;
+	font-size: 1.7em;
+	line-height: 30px;
+}
+
+.hero .card span {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.hero .card a {
+	margin: 20px;
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+	background-color: white;
+	font-size: 1.5em;
+	padding: 15px 20px;
+}
+
+.hero time {
+	position: absolute;
+	font-size: 1.5em;
+	color: white;
+	transform: rotate(90deg);
+	right: -70px;
+}
+
+.hero .buttons {
+	position: absolute;
+	display: inline-block;
+	right: 90px;
+	bottom: 40px;
+}
+
+.hero .buttons a {
+	font-size: 1.5em;
+	background: white;
+	border-radius: 100%;
+	color: black;
+	padding: 10px 15px;
+}
+
+/* end of hero section */
+/* start of services section */
+
+.services {
+	padding: 80px 10%;
+	text-align: center;
+}
+
+.services ul li {
+	display: inline-block;
+	width: 25%;
+	text-align: center;
+	margin: 20px 20px;
+	vertical-align: top;
+}
+
+.services ul li h4 {
+	font-size: 2em;
+}
+
+.services ul li p {
+	font-size: 1.4em;
+}
+/* end of services section */
+/* start of about section */
+.about {
+	background: #f2f4f7;
+	padding: 80px 12%;
+	text-align: center;
+}
+
+.about .content {
+	display: inline-block;
+	width: 45%;
+	vertical-align: top;
+	text-align: left;
+	margin-right: 40px;
+}
+
+.about .content h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 3.5em;
+	font-weight: normal;
+}
+
+.about .content p {
+	font-size: 1.4em;
+	margin: 30px 0;
+}
+
+.about .video {
+	display: inline-block;
+	width: 48%;
+}
+
+.about .video img {
+	width: 100%;
+}
+
+/* end of about section */
+/* start of staff section */
+.staff {
+	padding: 80px 10%;
+	text-align: center;
+}
+
+.staff ul li {
+	position: relative;
+	display: inline-block;
+	width: 25%;
+	background: center/cover no-repeat url("../assets/staff1.jpeg");
+	height: 400px;
+	margin: 20px 20px;
+}
+
+.staff ul li:nth-child(2) {
+	background: center/cover no-repeat url("../assets/staff2.jpeg");
+}
+
+.staff ul li:last-child {
+	background: center/cover no-repeat url("../assets/staff3.jpeg");
+}
+
+.staff ul li .staff__info {
+	position: absolute;
+	background: black;
+	color: white;
+	width: 80%;
+	bottom: -20px;
+	left: 10%;
+	padding: 12px;
+}
+
+.staff__info h4 {
+	font-size: 1.5em;
+	font-weight: normal;
+	margin: 0;
+	margin-bottom: 8px;
+}
+
+/* end of staff section */
+
+/* start of ad section */
+.ad {
+	margin: 80px 15%;
+	background: center/cover no-repeat url("../assets/promo-banner-image.jpg");
+}
+
+.ad .content {
+	width: 70%;
+	padding: 70px;
+}
+
+.ad .content span {
+	font-size: 1.5em;
+}
+
+.ad .content h2 {
+	font-size: 3.5em;
+	font-weight: normal;
+}
+
+.ad .content h2 span {
+	font-weight: bold;
+}
+
+/* end of ad section */
+/* start of lookbook section */
+.lookbook {
+	padding: 80px 0;
+	text-align: center;
+	height: auto;
+}
+
+.lookbook h2 {
+	font-size: 3.5em;
+	font-weight: normal;
+	margin: 15px 0;
+}
+
+.lookbook hr {
+	width: 25px;
+	height: 3px;
+	background-color: black;
+	border: none;
+	border-radius: 50px;
+}
+
+.lookbook div {
+	margin: 35px auto;
+	width: 1200px;
+}
+
+.images img {
+	width: 32%;
+	margin: 5px;
+	vertical-align: top;
+}
+
+.images img:nth-child(4),
+.images img:nth-child(6) {
+	position: relative;
+	top: -415px;
+	margin-bottom: -415px;
+}
+
+/* end of lookbook section */
+/* start of footer  */
+
+footer {
+	background: black;
+	padding: 10px 20px;
+	color: white;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+/* end of footer */
+
+/****************************** ************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/* start of media queries  */
+
+@media screen and (max-width: 1300px) {
+	.lookbook div {
+		width: 1000px;
+	}
+
+	.images img:nth-child(4),
+	.images img:nth-child(6) {
+		top: -345px;
+		margin-bottom: -345px;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	header {
+		padding: 20px 10px;
+	}
+
+	header nav ul li a {
+		margin: 10px 20px;
+	}
+
+	header nav i {
+		margin: 10px 20px;
+	}
+
+	.about {
+		padding: 80px 10%;
+	}
+
+	.ad {
+		margin: 80px 10%;
+	}
+
+	.lookbook div {
+		width: 850px;
+	}
+
+	.images img {
+		width: 31%;
+	}
+
+	.images img:nth-child(4),
+	.images img:nth-child(6) {
+		top: -285px;
+		margin-bottom: -285px;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	header {
+		padding: 10px 0px;
+	}
+
+	header > span,
+	header > a {
+		display: block;
+		width: 100%;
+		margin: 20px 0px;
+		text-align: center;
+	}
+
+	header > span {
+		margin-top: 10px;
+	}
+
+	header > nav {
+		width: 100%;
+	}
+
+	.hero .content {
+		width: 90%;
+		padding-top: 80px;
+	}
+
+	.hero .content h1 {
+		font-size: 6em;
+	}
+
+	.hero .content span {
+		margin-top: 10px;
+	}
+
+	.hero .buttons {
+		bottom: 70px;
+		right: 50px;
+	}
+
+	.services {
+		padding: 80px 0;
+	}
+
+	.services ul li {
+		width: 40%;
+	}
+
+	.about .content {
+		display: block;
+		width: 90%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.about .video {
+		margin-top: 40px;
+		width: 90%;
+	}
+
+	.staff ul li {
+		width: 40%;
+		margin: 30px 20px;
+	}
+
+	.ad .content h2 {
+		font-size: 2.8em;
+	}
+
+	.lookbook div {
+		width: 600px;
+		margin-top: 50px;
+	}
+
+	.images img {
+		width: 45%;
+	}
+
+	.images img:nth-child(1) {
+		width: 92%;
+	}
+
+	.images img:nth-child(5) {
+		position: relative;
+		top: -290px;
+		margin-bottom: -290px;
+	}
+
+	.images img:nth-child(4) {
+		top: 0px;
+	}
+
+	.images img:nth-child(6) {
+		top: -282px;
+		right: -140px;
+		margin-bottom: -285px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.lookbook div {
+		width: 90%;
+		margin-top: 50px;
+	}
+
+	.images img {
+		width: 60%;
+		margin-bottom: 5px;
+	}
+
+	.images img:nth-child(1),
+	.images img:nth-child(5),
+	.images img:nth-child(4),
+	.images img:nth-child(6) {
+		position: static;
+		top: 0px;
+		right: 0px;
+		width: 60%;
+		margin-bottom: 5px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.hero .content {
+		width: 90%;
+		padding-top: 80px;
+		text-align: center;
+	}
+
+	.hero .content h1 {
+		font-size: 5em;
+	}
+
+	.hero time,
+	.hero .buttons {
+		position: static;
+		margin-top: 30px;
+		margin: 30px auto;
+		display: block;
+		width: 90%;
+		transform: rotate(0deg);
+	}
+
+	.hero .card {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.services ul li {
+		width: 90%;
+	}
+
+	.about .content {
+		width: 100%;
+	}
+
+	.staff ul li {
+		width: 90%;
+		margin: 30px 0;
+	}
+
+	.ad .content {
+		width: 90%;
+		padding: 30px;
+	}
+
+	.ad .content h2 {
+		font-size: 2.5em;
+	}
+
+	.images img {
+		width: 90%;
+		margin-bottom: 5px;
+	}
+
+	.images img:nth-child(1),
+	.images img:nth-child(5),
+	.images img:nth-child(4),
+	.images img:nth-child(6) {
+		position: static;
+		top: 0px;
+		right: 0px;
+		width: 90%;
+		margin-bottom: 5px;
+	}
+}
+
+/* end of media queries */
