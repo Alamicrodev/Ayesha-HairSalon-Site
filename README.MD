@@ -1,7 +1,7 @@
 # Hair Salon SITE: [Visit Here](https://hairsalonayesha.netlify.app/)
 
 
-Without using CSS grid or flexbox, create a single page Hair Salon site as close as you can from the picture/wireframe given below. All the layout must be completed using floats or display property. The design must be responsive. The site is available online for visit [here](https://hairsalonayesha.netlify.app/). 
+This is a single page responsive site for a Hair Salon. Design is taken from the picture/wireframe given below. All the layout is completed using floats or display property. The challenge is to complete the layout without using css grid or flexbox. The site is available online for visit [here](https://hairsalonayesha.netlify.app/). 
 
 
 ### Concept:
